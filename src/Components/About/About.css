@@ -11,8 +11,6 @@
     position: relative;
 }
 .about-title img{
-    height: 20px;
-    width: 90px;
     bottom: 0;
     right: 0;
     z-index: -1;
@@ -101,4 +99,43 @@
 .about-achievment p{
     font-size: 22px;
     font-weight: 500;
+}
+@media(max-width:768px){
+    .about{
+        gap: 80px;
+        margin: 50px 30px;
+        align-items: start;
+    }
+    .about-title{
+        font-size: 50px;
+        padding: 0;
+    }
+    .about-title img{
+        width: 130px;
+        right: -15px;
+    }
+    .about-sections{
+      flex-direction: column;
+    }
+    .about-left{
+        display: none;
+    }
+    .about-para{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .about-achievments{
+        justify-content: space-between;
+    }
+    .about-achievment{
+        gap: 15px;
+    }
+    .about-achievment h1{
+        font-size: 34px;
+        font-weight: 600;
+    }
+    .about-achievment p{
+        text-align: center;
+        font-size: 16px;
+    }
 }
